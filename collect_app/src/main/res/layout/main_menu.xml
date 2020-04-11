@@ -81,7 +81,7 @@
                         android:layout_marginTop="@dimen/margin_extra_small"
                         tools:text="@string/enter_data"
                         android:textColor="#ffffff"
-                        android:background="#c7c7c7"/>
+                        android:background="#0099df"/>
 
                     <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/review_data"
@@ -91,7 +91,7 @@
                         android:layout_marginTop="@dimen/margin_extra_small"
                         tools:text="@string/review_data"
                         android:textColor="#ffffff"
-                        android:background="#c7c7c7"/>
+                        android:background="#0099df"/>
 
                     <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/send_data"
@@ -101,7 +101,7 @@
                         android:layout_marginTop="@dimen/margin_extra_small"
                         tools:text="@string/send_data"
                         android:textColor="#ffffff"
-                        android:background="#c7c7c7"/>
+                        android:background="#0099df"/>
 
                     <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/view_sent_forms"
@@ -111,7 +111,7 @@
                         android:layout_marginTop="@dimen/margin_extra_small"
                         android:text="@string/view_sent_forms"
                         android:textColor="#ffffff"
-                        android:background="#c7c7c7"/>
+                        android:background="#0099df"/>
 
                     <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/get_forms"
@@ -121,7 +121,7 @@
                         android:layout_marginTop="@dimen/margin_extra_small"
                         tools:text="@string/get_forms"
                         android:textColor="#ffffff"
-                        android:background="#c7c7c7"/>
+                        android:background="#0099df"/>
 
                     <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/manage_forms"
@@ -131,7 +131,7 @@
                         android:layout_marginTop="@dimen/margin_extra_small"
                         tools:text="@string/manage_files"
                         android:textColor="#ffffff"
-                        android:background="#c7c7c7"/>
+                        android:background="#0099df"/>
 
                     <TextView
                         android:id="@+id/version_sha"
