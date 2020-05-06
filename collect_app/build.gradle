@@ -76,12 +76,12 @@ android {
     compileSdkVersion(28)
 
     defaultConfig {
-        applicationId('org.odk.collect.android')
+        applicationId('org.sead.collect.android')
         minSdkVersion(21)
         //noinspection ExpiredTargetSdkVersion
         targetSdkVersion(28)
-        versionCode LEGACY_BUILD_NUMBER_OFFSET + getMasterCommitCount()
-        versionName getVersionName()
+        versionCode 1
+        versionName "1.0.0"
         testInstrumentationRunner('androidx.test.runner.AndroidJUnitRunner')
         multiDexEnabled true
         vectorDrawables.useSupportLibrary = true
