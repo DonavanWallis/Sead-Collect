@@ -26,8 +26,8 @@ import static org.sead.collect.android.tasks.sms.SmsSender.SMS_RESULT_CODE;
 import static org.sead.collect.android.utilities.NotificationUtils.CHANNEL_ID;
 
 public class SmsNotificationReceiver extends BroadcastReceiver {
-    public static final String SMS_NOTIFICATION_ACTION = "org.seadtest.collect.android.COLLECT_SMS_NOTIFICATION_ACTION";
-    private static final String SMS_NOTIFICATION_GROUP = "org.seadtest.collect.android.COLLECT_SMS_NOTIFICATION_GROUP";
+    public static final String SMS_NOTIFICATION_ACTION = "org.sead.collect.android.COLLECT_SMS_NOTIFICATION_ACTION";
+    private static final String SMS_NOTIFICATION_GROUP = "org.sead.collect.android.COLLECT_SMS_NOTIFICATION_GROUP";
     private static final int SUMMARY_ID = 4324;
     private int resultCode;
 

@@ -26,7 +26,7 @@ public class SmsSender {
     private final Context context;
     private final String instanceId;
 
-    public static final String SMS_SEND_ACTION = "org.seadtest.collect.android.COLLECT_SMS_SEND_ACTION";
+    public static final String SMS_SEND_ACTION = "org.sead.collect.android.COLLECT_SMS_SEND_ACTION";
     public static final String SMS_INSTANCE_ID = "COLLECT_SMS_INSTANCE_ID";
     static final String SMS_MESSAGE_ID = "COLLECT_SMS_MESSAGE_ID";
     static final String SMS_RESULT_CODE = "COLLECT_SMS_RESULT_CODE";

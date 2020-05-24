@@ -20,7 +20,7 @@ import android.net.Uri;
 import android.provider.BaseColumns;
 
 public final class InstanceProviderAPI {
-    public static final String AUTHORITY = "org.seadtest.collect.android.provider.odk.instances";
+    public static final String AUTHORITY = "org.sead.collect.android.provider.odk.instances";
 
     // This class cannot be instantiated
     private InstanceProviderAPI() {

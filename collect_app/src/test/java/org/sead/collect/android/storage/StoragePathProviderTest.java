@@ -263,8 +263,8 @@ public class StoragePathProviderTest {
     public void getAbsoluteInstanceFilePathWithScopedStorageTest() {
         mockUsingScopedStorage();
 
-        assertThat(storagePathProvider.getAbsoluteInstanceFilePath("All widgets_2020-01-20_13-54-11/All widgets_2020-01-20_13-54-11.xml"), is("/storage/emulated/0/Android/data/org.seadtest.collect.android/files/instances/All widgets_2020-01-20_13-54-11/All widgets_2020-01-20_13-54-11.xml"));
-        assertThat(storagePathProvider.getAbsoluteInstanceFilePath("/storage/emulated/0/Android/data/org.seadtest.collect.android/files/instances/All widgets_2020-01-20_13-54-11/All widgets_2020-01-20_13-54-11.xml"), is("/storage/emulated/0/Android/data/org.seadtest.collect.android/files/instances/All widgets_2020-01-20_13-54-11/All widgets_2020-01-20_13-54-11.xml"));
+        assertThat(storagePathProvider.getAbsoluteInstanceFilePath("All widgets_2020-01-20_13-54-11/All widgets_2020-01-20_13-54-11.xml"), is("/storage/emulated/0/Android/data/org.sead.collect.android/files/instances/All widgets_2020-01-20_13-54-11/All widgets_2020-01-20_13-54-11.xml"));
+        assertThat(storagePathProvider.getAbsoluteInstanceFilePath("/storage/emulated/0/Android/data/org.sead.collect.android/files/instances/All widgets_2020-01-20_13-54-11/All widgets_2020-01-20_13-54-11.xml"), is("/storage/emulated/0/Android/data/org.sead.collect.android/files/instances/All widgets_2020-01-20_13-54-11/All widgets_2020-01-20_13-54-11.xml"));
     }
 
     @Test
@@ -279,8 +279,8 @@ public class StoragePathProviderTest {
     public void getAbsoluteCacheFilePathWithScopedStorageTest() {
         mockUsingScopedStorage();
 
-        assertThat(storagePathProvider.getAbsoluteCacheFilePath("a688a8b48b2e50c070bc76239f572e16.formdef"), is("/storage/emulated/0/Android/data/org.seadtest.collect.android/files/.cache/a688a8b48b2e50c070bc76239f572e16.formdef"));
-        assertThat(storagePathProvider.getAbsoluteCacheFilePath("/storage/emulated/0/Android/data/org.seadtest.collect.android/files/.cache/a688a8b48b2e50c070bc76239f572e16.formdef"), is("/storage/emulated/0/Android/data/org.seadtest.collect.android/files/.cache/a688a8b48b2e50c070bc76239f572e16.formdef"));
+        assertThat(storagePathProvider.getAbsoluteCacheFilePath("a688a8b48b2e50c070bc76239f572e16.formdef"), is("/storage/emulated/0/Android/data/org.sead.collect.android/files/.cache/a688a8b48b2e50c070bc76239f572e16.formdef"));
+        assertThat(storagePathProvider.getAbsoluteCacheFilePath("/storage/emulated/0/Android/data/org.sead.collect.android/files/.cache/a688a8b48b2e50c070bc76239f572e16.formdef"), is("/storage/emulated/0/Android/data/org.sead.collect.android/files/.cache/a688a8b48b2e50c070bc76239f572e16.formdef"));
     }
 
     @Test
@@ -289,7 +289,7 @@ public class StoragePathProviderTest {
         assertThat(storagePathProvider.getRelativeMapLayerPath(""), is(""));
         assertThat(storagePathProvider.getRelativeMapLayerPath("countries/countries-raster.mbtiles"), is("countries/countries-raster.mbtiles"));
         assertThat(storagePathProvider.getRelativeMapLayerPath("/sdcard/odk/layers/countries/countries-raster.mbtiles"), is("countries/countries-raster.mbtiles"));
-        assertThat(storagePathProvider.getRelativeMapLayerPath("/storage/emulated/0/Android/data/org.seadtest.collect.android/files/layers/countries/countries-raster.mbtiles"), is("countries/countries-raster.mbtiles"));
+        assertThat(storagePathProvider.getRelativeMapLayerPath("/storage/emulated/0/Android/data/org.sead.collect.android/files/layers/countries/countries-raster.mbtiles"), is("countries/countries-raster.mbtiles"));
     }
 
     @Test
@@ -306,9 +306,9 @@ public class StoragePathProviderTest {
         mockUsingScopedStorage();
 
         assertThat(storagePathProvider.getAbsoluteOfflineMapLayerPath(null), is(nullValue()));
-        assertThat(storagePathProvider.getAbsoluteOfflineMapLayerPath("/sdcard/odk/layers/countries/countries-raster.mbtiles"), is("/storage/emulated/0/Android/data/org.seadtest.collect.android/files/layers/countries/countries-raster.mbtiles"));
-        assertThat(storagePathProvider.getAbsoluteOfflineMapLayerPath("/storage/emulated/0/odk/layers/countries/countries-raster.mbtiles"), is("/storage/emulated/0/Android/data/org.seadtest.collect.android/files/layers/countries/countries-raster.mbtiles"));
-        assertThat(storagePathProvider.getAbsoluteOfflineMapLayerPath("/storage/emulated/0/Android/data/org.seadtest.collect.android/files/layers/countries/countries-raster.mbtiles"), is("/storage/emulated/0/Android/data/org.seadtest.collect.android/files/layers/countries/countries-raster.mbtiles"));
+        assertThat(storagePathProvider.getAbsoluteOfflineMapLayerPath("/sdcard/odk/layers/countries/countries-raster.mbtiles"), is("/storage/emulated/0/Android/data/org.sead.collect.android/files/layers/countries/countries-raster.mbtiles"));
+        assertThat(storagePathProvider.getAbsoluteOfflineMapLayerPath("/storage/emulated/0/odk/layers/countries/countries-raster.mbtiles"), is("/storage/emulated/0/Android/data/org.sead.collect.android/files/layers/countries/countries-raster.mbtiles"));
+        assertThat(storagePathProvider.getAbsoluteOfflineMapLayerPath("/storage/emulated/0/Android/data/org.sead.collect.android/files/layers/countries/countries-raster.mbtiles"), is("/storage/emulated/0/Android/data/org.sead.collect.android/files/layers/countries/countries-raster.mbtiles"));
 
     }
 }
